@@ -1,0 +1,132 @@
+/*Green Body Background*/
+body{
+	font-size: 16px;
+	color:#000000;
+	background-color: #98FB98;
+}
+/*Purple Background Header*/
+#header-nav{
+	background-color: #DDA0DD;
+	border-radius: 0;
+	border:0;
+	padding-bottom: 10px;
+}
+/*Restuarant Logo*/
+#logo-img{
+	background: url(../images/logo.jpg) no-repeat;
+	background-size: 165px;
+	width: 170px;
+	height:150px;
+	margin: 25px 15px 5px 0;
+}
+.navbar-brand{
+	padding-top: 25px;
+}
+/*FOOD, LLC*/
+.navbar-brand h1{
+	font-family: Lucida Handwriting;
+	color: #98FB98;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+#nav-list{
+	margin-top: 5px;
+}
+#nav-list a{
+	color: #98FB98;
+	text-align: center;
+	text-shadow: 1px 1px 1px #222;
+}
+#nav-list a:hover{	
+	background: #FFC0CB;
+}
+#nav-list a span{
+	font-size: 1.8em;	
+}
+.navbar-header button.navbar-toggle,.navbar-header .icon-bar{
+	border:1px solid #98FB98;
+}
+.navbar-header button.navbar-toggle{
+	clear:both;
+	margin-top:-30px;
+}
+/*Start of single category page. Section is the start of everything within Our Menu Border*/
+section .row{
+	border: 2px solid black;
+	background: #DDA0DD;
+	width: 100%;
+	margin: auto 15px;
+
+}
+/*Chicken img within border pic with tomatoes*/
+.c-pic{
+	/*position: relative;*/
+	border: 2px solid black;
+	padding: 0;
+	max-width: 250px;
+	margin: 30px auto; /*TOP RIGHT BOTTOM LEFT*/
+}
+.chicken-item-description{
+	float: right;
+}
+.chicken-item-title{
+	text-align: center;
+	padding-top: 25px;
+	margin-bottom: 30px;
+}
+h3.chicken-item-title{
+	margin: 0 0 10px;
+}
+.chicken-item-details{
+	font-size: .9em;
+	font-style: italic;
+}
+/*End of single category page*/
+
+/*Large Devices*/
+@media (min-width: 1200px){
+
+}
+/*Medium Devices*/
+@media (min-width:992) and (max-width:1199){
+	/*Header*/
+	#logo-img{
+		background: url(images/logo.jpg) no-repeat;
+		width: 100px;
+		height:100px;
+		margin: 5px 5px 5px 0; /*TOP RIGHT BOTTOM LEFT*/
+	}
+	/*End Header*/
+}
+/*Small Devices*/
+@media (min-width:768) and (max-width:991){
+
+}
+/*Extra Small Devices*/
+@media (max-width:767){
+	/*Header*/
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 5vw; /*1vw = 1% of viewport width*/
+	}
+	#collapsable-nav a{
+		font-size: 1.2em;
+	}
+	#collapsable-nav a span{
+		font-size: 1em;
+		margin-right: 5px;
+	}
+	div.c-pic{
+		margin-left: auto;
+	}
+}
